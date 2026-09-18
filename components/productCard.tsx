@@ -10,6 +10,8 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart();
+  const { decreaseQuantity } = useCart();
+  const { clearCart } = useCart();
 
   return (
     <div className="border rounded-lg p-4 shadow-sm flex flex-col">
@@ -31,6 +33,13 @@ export default function ProductCard({ product }: ProductCardProps) {
       >
         Agregar al carrito
       </button>
+      <button
+        onClick={() => decreaseQuantity(product.id)}
+        className="bg-red-600 text-white rounded px-3 py-1 mt-2"
+      >
+        Disminuir cantidad
+      </button>
     </div>
   );
 }
+    

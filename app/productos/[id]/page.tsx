@@ -54,6 +54,10 @@ export default function ProductDetailPage() {
       >
         Agregar al carrito
       </button>
+      <button
+      >
+
+      </button>
     </div>
   );
 }
