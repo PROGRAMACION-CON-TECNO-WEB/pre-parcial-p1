@@ -123,7 +123,7 @@ function clearFilters() {
 
       {filteredProducts.length === 0 ? (
         <div className="text-center py-16">
-          <p className="text-gray-500 mb-4">No se encontraron productos.</p>
+          <p className="text-gray-500 mb-4">No se encontraron productos</p>
           <button
             onClick={clearFilters}
             className="bg-purple-600 text-white rounded px-4 py-2"
